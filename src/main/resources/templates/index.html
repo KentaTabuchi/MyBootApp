@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	h1{font-size:30pt;font-weight:bold;color:gray;}
+	body{color:blue;}
+</style>
+<title>Test misskabuApp1</title>
+</head>
+<body>
+	<h1>Hello world!!</h1>
+	<p>HTML test</p>
+	<p th:text="${msg}">please wait...</p>
+	<form method="post" action="/">
+		<input type="text" name="text1" th:value="${value}">
+		<input type="submit" value="Click">
+	</form>
+</body>
+</html>
