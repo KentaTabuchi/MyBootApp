@@ -14,5 +14,20 @@
 		<input type="text" name="text1" th:value="${value}">
 		<input type="submit" value="Click">
 	</form>
+	<form>
+		<table th:inline="text">
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>PHONE</th>
+			</tr>
+			<tr th:each="obj:${data}">
+				<td>[[${obj.id}]]</td>
+				<td>[[${obj.name}]]</td>
+				<td>[[${obj.value}]]</td>
+			</tr>
+		</table>
+	</form>
+	
 </body>
 </html>
